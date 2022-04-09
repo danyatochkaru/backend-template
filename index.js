@@ -1,10 +1,10 @@
 // imports
-import express from "express";
-import cors from "cors";
-import cookieParser from "cookie-parser";
-import {settings} from "./config.json";
-import compression from "compression";
-import bodyParser from "body-parser";
+const express = require("express"),
+  cors = require("cors"),
+  cookieParser = require("cookie-parser"),
+  settings = require("./config.json").settings,
+  compression = require("compression"),
+  bodyParser = require("body-parser");
 
 // app setup
 const app = express();
